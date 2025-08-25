@@ -3,7 +3,7 @@
 # name
 Luis Adam Dela Cruz
 
-# course-name
+# course name
 Website Development 2 
 
 # short description
