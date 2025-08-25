@@ -1,0 +1,184 @@
+/* Basic page style */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Dark mode alternative style */
+body.dark-mode {
+  background-color: #121212;
+  color: #ddd;
+}
+
+/* Header style */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Theme toggle button */
+#theme-btn {
+  background-color: #5a9bd6;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 3px 8px rgba(90,155,214,0.5);
+  margin-bottom: 35px;
+  transition: background-color 0.3s ease;
+}
+#theme-btn:hover {
+  background-color: #4a8ac1;
+}
+
+/* Form container styling */
+form#registration-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 35px;
+  width: 360px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark mode form background */
+body.dark-mode form#registration-form {
+  background-color: #1f1f1f;
+  color: #eee;
+}
+
+/* Labels style */
+form label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs style */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 11px 14px;
+  font-size: 1rem;
+  border: 1.8px solid #aaa;
+  border-radius: 6px;
+  margin-top: 6px;
+  transition: border-color 0.3s ease;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  border-color: #5a9bd6;
+  outline: none;
+  box-shadow: 0 0 6px rgba(90,155,214,0.6);
+}
+
+/* Submit and Reset buttons style */
+form button[type="submit"],
+#reset-btn {
+  width: 100%;
+  padding: 13px 0;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  margin-bottom: 12px;
+}
+form button[type="submit"]:hover {
+  background-color: #219150;
+}
+
+/* Reset button */
+#reset-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+#reset-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Message display */
+#message {
+  margin-top: 22px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  min-height: 24px;
+  transition: color 0.4s ease;
+}
+.success {
+  color: #2ecc71;
+}
+.error {
+  color: #e74c3c;
+}
+
+/* Outer div for event bubbling/capturing demo */
+#outer-div {
+  margin-top: 48px;
+  padding: 22px;
+  border: 2px solid #999;
+  border-radius: 14px;
+  width: 360px;
+  color: #555;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+body.dark-mode #outer-div {
+  background-color: #2a2a2a;
+  color: #ddd;
+}
+
+/* Inner button style */
+#inner-btn {
+  margin-top: 18px;
+  padding: 11px 22px;
+  background-color: #f39c12;
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#inner-btn:hover {
+  background-color: #d68910;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+body {
+  animation: fadeIn 1s ease forwards;
+}
